@@ -13,7 +13,13 @@
                 'ospite'=> 'Milano', 
                 'punti_casa'=>'109', 
                 'punti_ospite'=> '70'
-                ]
+            ],
+            [
+                'casa'=> 'stcharles',
+                'ospite'=> 'Mongoloidi', 
+                'punti_casa'=>'109', 
+                'punti_ospite'=> '70'
+            ]
             ];
         
 ?>

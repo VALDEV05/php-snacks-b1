@@ -31,12 +31,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .red{
+            color:red;
+        }
+    </style>
 </head>
 <body>  
     <p>nome: <?php echo $name;?></p>
     <p>email: <?php echo $email;?></p>
     <p>age: <?php echo $age;?></p>
-    <p>risultato: <?php echo $result;?></p>
+    <p>risultato: <span class=red><?php echo $result;?></span> </p>
 
     
 </form>     
