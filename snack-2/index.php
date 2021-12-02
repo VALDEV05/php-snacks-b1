@@ -2,11 +2,20 @@
     /* Passare come parametri GET name, mail e age e verificare (cercando i metodi che non conosciamo nella documentazione) che name sia più lungo di 3 caratteri, che mail contenga un punto e una chiocciola e che age sia un numero. Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato” */
 
     $name = $_GET["name"];
-    #strlen($name);
-    $nameLen = strlen($name);
+    $name = $_GET["name"];
+    $email = $_GET["email"];
+    $age = $_GET["age"];
+
+    /* $nameLen = strlen($name);
     if ($nameLen < 3) {
         $name = 'Nome non valido';
     }
+    $email = $_GET["email"];
+    
+    if (strpos($email,'@') != 0) {
+        
+    } */
+
 ?>
 
 
@@ -24,6 +33,9 @@
 </head>
 <body>  
     <p>nome: <?php echo $name;?></p>
+    <p>email: <?php echo $email;?></p>
+    <p>age: <?php echo $age;?></p>
+
     
 </form>     
 </body>
