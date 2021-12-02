@@ -5,7 +5,7 @@
     $email = $_GET["email"];
     $age = $_GET["age"];
 
-    if(strlen($name) > 3){
+    if(strlen($name) > 3 && is_numeric($age)){
         if (strpos($email, '@') && strpos($email, '.')) {
             $result = 'successful access';
         }else{
