@@ -48,4 +48,49 @@
     
     
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snack-3</title>
+    <style>
+        .row{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+        }
+        .col-3{
+            width: calc(100% / 4);
+        }
+        .post{
+            max-width:300px;
+            min-width: 250px;
+            border:1px solid black;
+            text-align: center;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <?php
+            foreach ($posts as $key => $value) {
+                for ($i=0; $i < count($value); $i++) { ?>
+                    <div class="post col-3">
+                        <h3>Post</h3>
+                        <p>Titolo:  <?= $value[$i]['title']?></p>
+                        <p>Autore:  <?= $value[$i]['author']?></p>
+                        <p>Testo:   <?= $value[$i]['text']?></p>
+                    </div>
+                    
 
+                <?php }
+            }?>
+        
+    </div>
+    
+</body>
+</html>
