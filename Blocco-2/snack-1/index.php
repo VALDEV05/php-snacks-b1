@@ -28,5 +28,9 @@
             ],
 
         ];
-
+        #questa funzione al refresh entra nel'url stabilito, ora devo rendere dinamico il tutto;
+        
+    header("refresh: 1; url = 'https://laravel.com");
+        
+    exit;
 ?>
