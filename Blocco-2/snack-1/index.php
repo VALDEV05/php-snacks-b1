@@ -29,8 +29,32 @@
 
         ];
         #questa funzione al refresh entra nel'url stabilito, ora devo rendere dinamico il tutto;
-        
-    header("refresh: 1; url = 'https://laravel.com");
-        
-    exit;
+
+   #header("refresh: 1; url = 'https://laravel.com");
+        #stampo le pubblicità a schermo
+
+        #shuffle
+        /* This function shuffles (randomizes the order of the elements in) an array. It uses a pseudo random number generator that is not suitable for cryptographic purposes.  */
+
+
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blocco-2/snack-1</title>
+</head>
+<body>
+    <div style="display:flex; flex-direction: column; justify-content:center; align-items:center;">
+        <!-- stampare solo le pubblicità con 'is_active' => true  verifico quelle-->
+        <?php if( $ads[0]['image_path']){ shuffle($ads); ?>
+            <img src="<?= $ads[0]['image_path']; ?>" style="width: 300px;">
+            <br>
+            <a href="<?= $ads[0]['link']?>"><?= $ads[0]['link']?></a>
+        <?php }
+        ?>
+    </div>
+</body>
+</html>
