@@ -50,9 +50,9 @@
     <div style="display:flex; flex-direction: column; justify-content:center; align-items:center;">
         <!-- stampare solo le pubblicità con 'is_active' => true  verifico quelle-->
         <?php if( $ads[0]['image_path']){ shuffle($ads); ?>
-            <img src="<?= $ads[0]['image_path']; ?>" style="width: 300px;">
+            
             <br>
-            <a href="<?= $ads[0]['link']?>"><?= $ads[0]['link']?></a>
+            <a href="<?= $ads[0]['link']?>"><img src="<?= $ads[0]['image_path']; ?>" style="width: 300px;"></a>
         <?php }
         ?>
     </div>
